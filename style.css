@@ -1,0 +1,135 @@
+:root {
+  --bg: #0b0b0b;
+  --card: #141414;
+  --text: #eaeaea;
+  --muted: #a0a0a0;
+  --accent: #292424;
+  --footer: #0c1d3e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  background: black;
+  color: var(--text);
+}
+
+/* ---------- Layout ---------- */
+section {
+  padding: 80px 8%;
+}
+
+h1, h2 {
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 100vh;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  color: var(--text);
+}
+
+.hero-text p {
+  max-width: 520px;
+  margin-top: 20px;
+}
+
+.nav {
+  margin-top: 30px;
+}
+
+.nav a {
+  margin-right: 20px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-img img {
+  width: 320px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: none;
+  box-shadow: 0 0 80px rgba(225,6,0,0.3);
+}
+
+/* ---------- Skills ---------- */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skill {
+  background: var(--card);
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Projects ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+  background-color: var(--footer);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 260px;
+    height: 340px;
+  }
+}

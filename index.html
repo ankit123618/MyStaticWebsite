@@ -1,252 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ankit Sharma – Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Sharma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/hero.jpg" type="image/x-icon">
 
-<style>
-:root {
-  --bg: #0b0b0b;
-  --card: #141414;
-  --text: #eaeaea;
-  --muted: #a0a0a0;
-  --accent: #e10600;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
-  background: radial-gradient(circle at top left, #300000, #000 60%);
-  color: var(--text);
-}
-
-/* ---------- Layout ---------- */
-section {
-  padding: 80px 8%;
-}
-
-h1, h2 {
-  margin: 0 0 20px;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-p {
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-/* ---------- Hero ---------- */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  min-height: 100vh;
-}
-
-.hero-text h1 {
-  font-size: 3.2rem;
-  color: var(--accent);
-}
-
-.hero-text p {
-  max-width: 520px;
-  margin-top: 20px;
-}
-
-.nav {
-  margin-top: 30px;
-}
-
-.nav a {
-  margin-right: 20px;
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.hero-img img {
-  width: 320px;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 50% 0 50% 0;
-  box-shadow: 0 0 80px rgba(225,6,0,0.3);
-}
-
-/* ---------- Skills ---------- */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
-.skill {
-  background: var(--card);
-  padding: 12px 18px;
-  border-radius: 12px;
-  font-size: 0.9rem;
-}
-
-/* ---------- Projects ---------- */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: var(--card);
-  border-radius: 18px;
-  padding: 20px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 14px;
-  margin-bottom: 14px;
-}
-
-.card h3 {
-  margin: 10px 0;
-}
-
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  padding: 40px;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-img img {
-    width: 260px;
-    height: 340px;
-  }
-}
-</style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>Ankit Sharma</h1>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Ankit Sharma</h1>
+      <p>
+        Software Engineer • Researcher • Educator<br>
+        Building technology, knowledge systems, and tools that enrich humanity and empower minds.
+      </p>
+
+      <div class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#vision">Vision</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="images/hero.jpg" alt="Ankit Sharma">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
     <p>
-      Software Engineer • Researcher • Educator<br>
-      Building technology, knowledge systems, and tools that remove superstition
-      and empower minds.
+      I am a software engineer from Jabalpur, India, with a background in both
+      diploma and B.Tech engineering. I work across low-level systems,
+      web technologies, simulations, and research-driven projects.
     </p>
+  </section>
 
-    <div class="nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#vision">Vision</a>
-      <a href="#contact">Contact</a>
+  <!-- SERVICES -->
+  <section id="skills">
+    <h2>Services</h2>
+    <div class="skills">
+      <div class="skill">Software Development</div>
+      <div class="skill">Web Development</div>
+      <div class="skill">Desktop Applications</div>
+      <div class="skill">Mobile Application</div>
+      <div class="skill">Automation</div>
+      <div class="skill">Database Management</div>
     </div>
-  </div>
+  </section>
 
-  <div class="hero-img">
-    <img src="images/hero.jpg" alt="Ankit Sharma">
-  </div>
-</section>
+  <!-- TOOLS -->
+  <section id="skills">
+    <h2>Tools</h2>
+    <div class="skills">
+      <div class="skill">C / C++</div>
+      <div class="skill">Python</div>
+      <div class="skill">Go</div>
+      <div class="skill">PHP</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Linux (Fedora)</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">System Design</div>
+      <div class="skill">DSA</div>
+      <div class="skill">Research & Development</div>
+    </div>
+  </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a software engineer from Jabalpur, India, with a background in both
-    diploma and B.Tech engineering. I work across low-level systems,
-    web technologies, simulations, and research-driven projects.
-  </p>
-</section>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div class="skill">C / C++</div>
-    <div class="skill">Python</div>
-    <div class="skill">Go</div>
-    <div class="skill">PHP</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">Linux (Fedora)</div>
-    <div class="skill">MySQL</div>
-    <div class="skill">System Design</div>
-    <div class="skill">DSA</div>
-    <div class="skill">Research & Development</div>
-  </div>
-</section>
+      <div class="card">
+        <img src="images/qr-generator/Screenshot From 2026-03-28 21-28-20.png" alt="">
+        <h3>QR Code Generator</h3>
+        <p>
+          A simple and efficient QR code generator.
+        </p>
+      </div>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
+      <div class="card">
+        <img src="images/data_toolkit/Screenshot From 2026-03-30 14-53-03.png" alt="Data Toolkit">
+        <h3>Data Toolkit</h3>
+        <p>
+          A Gnome extension which calculates the current internet speed of download and upload and shows it in panel and
+          also make calculations that how much time and data consumed after upload and download the specific data
+          amount.
+        </p>
+      </div>
 
-    <div class="card">
-      <img src="images/project1.jpg">
-      <h3>Fitness & Health Simulation Platform</h3>
-      <p>
-        Athlete-first training and nutrition system with deep physiological logic,
-        focusing on recovery and realistic body adaptation.
-      </p>
+      <div class="card">
+        <!-- img -->
+        <h3>Dev Create</h3>
+        <p>
+          An automation tool for developers to create projects deployment files with a single command, streamlining the
+          setup process and boosting productivity.
+        </p>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/project3.jpg"> -->
+        <h3>Web Dev</h3>
+        <p>
+          A Template for developing modern, responsive, and secure web applications.
+        </p>
+      </div>
+
+      <div class="card">
+        <!-- <img src="images/project3.jpg"> -->
+        <h3>Fitness Tracker</h3>
+        <p>
+          A web application for tracking fitness goals and monitoring progress.
+        </p>
+      </div>
+
+      <!-- ONGOING PROJECTS -->
+      <section id="ongoing-projects">
+        <h2>Ongoing Projects</h2>
+
+        <div class="card">
+          <!-- <img src="images/project3.jpg"> -->
+          <h3>Knowledge & Education Platforms</h3>
+          <p>
+            Web platforms, books, and Gurukul-style systems combining ancient texts
+            with modern science.
+          </p>
+        </div>
+
+        <div class="card">
+          <!-- <img src="images/project3.jpg"> -->
+          <h3>Knowledge & Education Platforms</h3>
+          <p>
+            Web platforms, books, and Gurukul-style systems combining ancient texts
+            with modern science.
+          </p>
+        </div>
+
+        <div class="card">
+          <!-- <img src="images/project3.jpg"> -->
+          <h3>Knowledge & Education Platforms</h3>
+          <p>
+            Web platforms, books, and Gurukul-style systems combining ancient texts
+            with modern science.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div id="social">
+      <a href="https://github.com/ankit123618" target="_blank">
+        <h6>GitHub</h6>
+      </a>
+      <a href="https://www.linkedin.com/in/ankitbhai158" target="_blank">
+        <h6>LinkedIn</h6>
+      </a>
+    </div>
+    <div id="developer">
+      <h6>Developer</h6>
+      <a href="">
+        <h>flathub</h>
+      </a><a href="">
+        <h>pypi</h>
+      </a>
+
     </div>
 
-    <div class="card">
-      <img src="images/project2.jpg">
-      <h3>Celestial & Atmospheric Illusions</h3>
-      <p>
-        Python-based visual simulations explaining planetary and atmospheric
-        perception using physics and motion.
-      </p>
-    </div>
-
-    <div class="card">
-      <img src="images/project3.jpg">
-      <h3>Knowledge & Education Platforms</h3>
-      <p>
-        Web platforms, books, and Gurukul-style systems combining ancient texts
-        with modern science.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- VISION -->
-<section id="vision">
-  <h2>Vision</h2>
-  <p>
-    To build libraries, research centers, and technologies that enrich humanity
-    with logical thinking, scientific temperament, and clarity.
-  </p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: as4808385@gmail.com</p>
-  <p>GitHub: github.com/ankit123618</p>
-  <p>YouTube: @ankitbhai123618</p>
-</section>
-
-<footer>
-  © 2026 Ankit Sharma • Built on Linux with clarity and purpose
-</footer>
+    <h6 id="copyright">
+      © 2026 Ankit Sharma • Built on Linux with clarity and purpose
+    </h6>
+  </footer>
 
 </body>
+
 </html>
