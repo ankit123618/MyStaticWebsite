@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ankit Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/hero.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="files/hero.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -34,14 +39,14 @@
       </div>
 
       <div class="hero-img">
-        <img src="images/hero.jpg" alt="Ankit Sharma">
+        <img src="files/hero.jpg" alt="Ankit Sharma">
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
-    <h2>About Me</h2>
+    <h2><span class="material-symbols-outlined section-icon">person</span>About Me</h2>
     <p>
       I am a software engineer from Jabalpur, India, with a background in both
       diploma and B.Tech engineering. I work across low-level systems,
@@ -51,7 +56,7 @@
 
   <!-- SERVICES -->
   <section id="services">
-    <h2>Services</h2>
+    <h2><span class="material-symbols-outlined section-icon">design_services</span>Services</h2>
     <div class="skills">
       <div class="skill">Software Development</div>
       <div class="skill">Web Development</div>
@@ -64,7 +69,7 @@
 
   <!-- TOOLS -->
   <section id="tools">
-    <h2>Tools</h2>
+    <h2><span class="material-symbols-outlined section-icon">terminal</span>Tools</h2>
     <div class="skills">
       <div class="skill">C / C++</div>
       <div class="skill">Python</div>
@@ -81,61 +86,239 @@
 
   <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
+    <h2><span class="material-symbols-outlined section-icon">deployed_code</span>Projects</h2>
     <div class="projects">
 
+      <!-- PROJECT 1 -->
       <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card">
-          <img src="images/qr-generator/Screenshot From 2026-03-28 21-28-20.png" alt="">
-          <h3>QR Code Generator</h3>
-          <p>
-            A simple and efficient QR code generator.
-          </p>
+        <div class="card card-featured">
+          <div class="card-split-layout">
+            <div class="card-main-column">
+              <div class="media-frame media-frame-single">
+                <img src="files/qr-generator/Screenshot From 2026-03-28 21-28-20.png" alt="QR Code Generator preview">
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">image</span>
+                  Preview
+                </span>
+              </div>
+              <div class="card-content">
+                <h3>
+                  <span class="material-symbols-outlined project-icon">qr_code_2</span>
+                  QR Code Generator
+                </h3>
+                <p>
+                  A simple and efficient QR code generator.
+                </p>
+              </div>
+            </div>
+            <div class="card-demo-column">
+              <div class="media-frame media-frame-demo">
+                <video controls preload="metadata">
+                  <source src="files/qr-generator/demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">play_circle</span>
+                  Demo
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </a>
 
+      <!-- PROJECT 2 -->
       <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card">
-          <img src="images/data_toolkit/Screenshot From 2026-03-30 14-53-03.png" alt="Data Toolkit">
-          <h3>Data Toolkit</h3>
-          <p>
-            A Gnome extension which calculates the current internet speed of download and upload and shows it in panel
-            and
-            also make calculations that how much time and data consumed after upload and download the specific data
-            amount.
-          </p>
+        <div class="card card-featured">
+          <div class="card-split-layout">
+            <div class="card-main-column">
+              <div class="media-frame media-frame-single">
+                <img src="files/data_toolkit/Screenshot From 2026-03-30 14-53-03.png" alt="Data Toolkit preview">
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">image</span>
+                  Preview
+                </span>
+              </div>
+              <div class="card-content">
+                <h3>
+                  <span class="material-symbols-outlined project-icon">data_object</span>
+                  Data Toolkit
+                </h3>
+                <p>
+                  A tool which calculate the current internet speed of upload and download and show it in the panel also
+                  calculates the time and actual data amount cost to upload and download the given data amount.
+                </p>
+              </div>
+            </div>
+            <div class="card-demo-column">
+              <div class="media-frame media-frame-demo">
+                <video controls preload="metadata">
+                  <source src="files/data_toolkit/demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">play_circle</span>
+                  Demo
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </a>
 
+      <!-- PROJECT 3 -->
       <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card">
-          <!-- img -->
-          <h3>Dev Create</h3>
-          <p>
-            An automation tool for developers to create projects deployment files with a single command, streamlining
-            the
-            setup process and boosting productivity.
-          </p>
+        <div class="card card-featured">
+          <div class="card-split-layout">
+            <div class="card-main-column">
+              <!-- <div class="media-frame media-frame-single">
+                <img src="files/dev_create/" alt="Dev create preview">
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">image</span>
+                  Preview
+                </span>
+              </div> -->
+              <div class="card-content">
+                <h3>
+                  <span class="material-symbols-outlined project-icon">data_object</span>
+                  Dev Create
+                </h3>
+                <p>
+                  An automation tool for developers to create projects deployment files with a single command,
+                  streamlining
+                  the
+                  setup process and boosting productivity.
+                </p>
+              </div>
+            </div>
+            <div class="card-demo-column">
+              <!-- <div class="media-frame media-frame-demo">
+                <video controls preload="metadata">
+                  <source src="files/dev_create/dev-create.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">play_circle</span>
+                  Demo
+                </span>
+              </div> -->
+            </div>
+          </div>
         </div>
       </a>
 
+      <!-- PROJECT 4 -->
       <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card">
-          <img src="images/webdev/Screenshot From 2026-04-04 10-47-39.png">
-          <h3>Web Dev</h3>
-          <p>
-            A Template for developing modern, responsive, and secure web applications.
-          </p>
+        <div class="card card-featured">
+          <div class="card-split-layout">
+            <div class="card-main-column">
+              <div class="media-frame media-frame-single">
+                <img src="files/webdev/Screenshot From 2026-04-04 10-47-39.png" alt="Web Dev template preview">
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">image</span>
+                  Preview
+                </span>
+              </div>
+              <div class="card-content">
+                <h3>
+                  <span class="material-symbols-outlined project-icon">data_object</span>
+                  Web Dev
+                </h3>
+                <p>
+                  A Template for developing modern, responsive, and secure web applications.
+                </p>
+              </div>
+            </div>
+            <div class="card-demo-column">
+              <div class="media-frame media-frame-demo">
+                <video controls preload="metadata">
+                  <source src="files/webdev/demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">play_circle</span>
+                  Demo
+                </span>
+              </div>
+            </div>
+          </div>          
         </div>
       </a>
 
+      <!-- PROJECT 5 -->
       <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card">
-          <!-- <img src="images/project3.jpg"> -->
-          <h3>Fitness Tracker</h3>
-          <p>
-            A tool for tracking fitness goals and monitoring progress.
-          </p>
+        <div class="card card-featured">
+          <div class="card-split-layout">
+            <div class="card-main-column">
+              <!-- <div class="media-frame media-frame-single">
+                <img src="files/fitness/fitness-preview.png" alt="Fitness Tracker preview">
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">image</span>
+                  Preview
+                </span>
+              </div> -->
+              <div class="card-content">
+                <h3>
+                  <span class="material-symbols-outlined project-icon">data_object</span>
+                  Fitness Tracker
+                </h3>
+                <p>
+                  A tool for tracking fitness goals and monitoring progress.
+                </p>
+              </div>
+            </div>
+            <div class="card-demo-column">
+              <!-- <div class="media-frame media-frame-demo">
+                <video controls preload="metadata">
+                  <source src="files/fitness/fitness-demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">play_circle</span>
+                  Demo
+                </span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- PROJECT 6 -->
+      <a href="#" style="text-decoration: none; color: inherit;">
+        <div class="card card-featured">
+          <div class="card-split-layout">
+            <div class="card-main-column">
+              <!-- <div class="media-frame media-frame-single">
+                <img src="files/webdev/Screenshot From 2026-04-04 10-47-39.png" alt="Web Dev template preview">
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">image</span>
+                  Preview
+                </span>
+              </div> -->
+              <div class="card-content">
+                <h3>
+                  <span class="material-symbols-outlined project-icon">data_object</span>
+                  Portfolio CMS
+                </h3>
+                <p>
+                  Modern and secure content management system for personal portfolios, enabling easy updates and
+                  customization.
+                </p>
+              </div>
+            </div>
+            <div class="card-demo-column">
+              <!-- <div class="media-frame media-frame-demo">
+                <video controls preload="metadata">
+                  <source src="files/webdev/webdev-demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <span class="media-badge">
+                  <span class="material-symbols-outlined">play_circle</span>
+                  Demo
+                </span>
+              </div> -->
+            </div>
+          </div>
         </div>
       </a>
     </div>
@@ -162,16 +345,19 @@
 
         <div class="footer-block">
           <h4>Community</h4>
-          <a href="https://github.com/ankit123618" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/ankitbhai158" target="_blank">LinkedIn</a>
+          <a href="https://github.com/ankit123618" target="_blank"><span
+              class="material-symbols-outlined footer-icon">code</span>GitHub</a>
+          <a href="https://www.linkedin.com/in/ankitbhai158" target="_blank"><span
+              class="material-symbols-outlined footer-icon">groups</span>LinkedIn</a>
           <!-- <a href="#">Flathub</a> -->
           <!-- <a href="#">PyPI</a> -->
         </div>
 
         <div class="footer-block">
           <h4>Contact</h4>
-          <a href="tel:+918103902427">+91 81039 02427</a>
-          <a href="mailto:ankitbhai158@gmail.com">ankitbhai158@gmail.com</a>
+          <a href="tel:+918103902427"><span class="material-symbols-outlined footer-icon">call</span>+91 81039 02427</a>
+          <a href="mailto:ankitbhai158@gmail.com"><span
+              class="material-symbols-outlined footer-icon">mail</span>ankitbhai158@gmail.com</a>
           <p>Available for collaboration, open-source contributions, and research projects.</p>
         </div>
       </div>
