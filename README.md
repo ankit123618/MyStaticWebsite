@@ -1,87 +1,91 @@
 # MyStaticWebsite
 
-A simple dark-themed personal website for showcasing skills, projects, and contact information.
+A static personal portfolio redesigned with a product-showcase UI inspired by the pacing, boldness, and rounded visual language of the Nintendo Switch landing experience.
+
+## What Changed
+
+- Rebuilt the page into a polished product-style landing page instead of a basic section stack.
+- Added a design-token system with CSS variables so colors, spacing, radius values, shadows, and motion are easy to change.
+- Introduced lightweight JavaScript for reveal animations, active navigation state, and subtle pointer-based stage motion.
+- Reused existing local images and videos as showcase assets, so the site looks richer without adding unnecessary dependencies.
 
 ## Project Structure
 
-- `index.html` — main page content and sections
-- `style.css` — site styling, responsive layout, and theme variables
-- `images/` — image assets used for hero and project cards
+- `index.html` - semantic page structure and content sections
+- `style.css` - design tokens, responsive layout, animation styles, and component styling
+- `script.js` - reveal-on-scroll, nav highlighting, and hero tilt interaction
+- `files/` - local media assets used across the hero and project showcase
 
-## Style and Theme Documentation
+## Design System
 
-This project uses a **mobile-first responsive design** with CSS variables defined at the top of `style.css`.
+The site is driven by variables in the `:root` block in `style.css`.
 
-### Core theme variables
+### Key token groups
 
-The main color variables are declared in `:root`:
+- Colors: `--color-bg`, `--color-surface`, `--color-text`, `--color-brand`, `--color-accent`
+- Layout: `--site-max-width`, `--section-gap`, `--section-padding`
+- Radius: `--radius-xs`, `--radius-sm`, `--radius-md`, `--radius-lg`, `--radius-pill`
+- Motion: `--ease-standard`, `--ease-snappy`, `--duration-fast`, `--duration-base`, `--duration-slow`
+- Shadows: `--shadow-card`, `--shadow-soft`
 
-- `--bg` — page background
-- `--card` — card/background panels
-- `--text` — primary text color
-- `--muted` — subtitle/text-muted color
-- `--accent` — panel or accent background colors
-- `--footer` — footer background color
-- `--primary-accent` — main highlight / hover color
-- `--secondary-accent` — secondary highlight color
-- `--red-accent` — red accent color used for name styling
+### Fast customization
 
-### How to change the theme
+If you want to retheme the site later, start here:
 
-1. Open `style.css`
-2. Update the values in the `:root` block
-3. Save and refresh the page
+1. Change the brand colors in the `:root` block.
+2. Adjust spacing and rounding tokens for a tighter or softer visual feel.
+3. Swap assets in `files/` and update their references in `index.html`.
 
-Example:
+## Layout Overview
 
-```css
-:root {
-  --bg: #121212;
-  --card: #1b1b1f;
-  --text: #f7f7f7;
-  --muted: #b0b0b0;
-  --accent: #24272d;
-  --footer: #101625;
-  --primary-accent: #40c4ff;
-  --secondary-accent: #8be9fd;
-  --red-accent: #ff3b3f;
-}
-```
+### `index.html`
 
-### Styling guidelines
+- Sticky top navigation with a primary CTA
+- Hero section with console-inspired visual stage
+- About section with summary and process notes inside a rounded red showcase panel
+- Capabilities section rebuilt as a Nintendo-style comparison card block
+- Featured project showcase with screenshots and videos
+- Contact section and large rounded red footer
 
-- Use `--bg` and `--card` for large background sections and cards.
-- Use `--text` for headings and important labels.
-- Use `--muted` for descriptive text, paragraphs, and subtle items.
-- Use `--primary-accent` for hover states, links, and interactive UI highlights.
-- Use `--secondary-accent` for subtle accent lines and secondary buttons.
-- Use `--red-accent` for brand highlights, especially in the hero name styling.
+### `style.css`
 
-## Responsive design notes
+- Uses reusable component classes instead of one-off styling where possible
+- Keeps animation values centralized with motion variables
+- Includes responsive breakpoints for desktop, tablet, and mobile
+- Includes `prefers-reduced-motion` support for accessibility
+- Uses `.section-panel` and `.section-panel-red` for the big rounded showcase sections
 
-- The site starts with mobile-first layout.
-- `@media (min-width: 640px)` and above adds tablet layout improvements.
-- `@media (min-width: 768px)` refines spacing and card layout.
-- `@media (min-width: 1024px)` enables desktop hero and grid layout.
+### `script.js`
 
-## Footer customization
+- Reveals `.reveal` elements when they enter the viewport
+- Adds `.is-active` to the nav link matching the visible section
+- Adds mild pointer tilt to the hero stage on larger screens
 
-The footer uses a compact layout with the following sections:
+## Asset Notes
 
-- Brand / summary
-- Navigation links
-- Social/community links
-- Contact information
-- Copyright
+The redesign intentionally uses existing assets already in the repository:
 
-To adjust footer spacing, update the `footer` padding properties in `style.css`.
+- `files/hero.jpg` for the hero stage and one mini-project card
+- `files/portfoliocms/*` as the main featured product
+- `files/qr-generator/*` for the secondary showcase
+- `files/data_toolkit/*` and `files/webdev/*` for supporting project cards
+- `files/upi.jpeg` as a fallback supporting visual in the mini project rail
 
-## Updating content
+If you later add better thumbnails for `Dev Create` or `Track Fitness`, replace those image references in `index.html`.
 
-- Edit `index.html` to change text, projects, links, or section order.
-- For new cards, add another `.card` element inside the `projects` section.
-- For new skills or tools, add another `.skill` block inside the correct section.
+## Recommended Image Direction
 
-## Notes
+If you want the sections to feel even closer to the Nintendo reference, use these kinds of visuals:
 
-This website is designed to be easy to customize by changing variables and content. For a future theme update, focus on the top `:root` variables and the footer/card accent values.
+- Hero: a clean portrait or product image with strong subject isolation and soft background blur
+- About panel: abstract workspace shot, keyboard desk setup, or subtle gradient illustration
+- Comparison cards: bright isolated product screenshots on light backgrounds
+- Project showcase: clean UI screenshots with consistent crop ratios
+- Footer: keep it mostly graphic and color-led instead of using busy images
+
+## Maintenance Notes
+
+- Keep new sections on the `.section-block` pattern for visual consistency.
+- Prefer existing tokens before adding hard-coded colors or shadows.
+- If you add new animated blocks, reuse `.reveal` and existing transition variables before creating new motion rules.
+- The page is intentionally dependency-light: only HTML, CSS, and a small JavaScript file.
