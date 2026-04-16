@@ -8,366 +8,336 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
+    href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="files/hero.jpg" type="image/x-icon">
 </head>
 
 <body>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>
-          <span class="name-part name-ank">Ank</span><span class="name-part name-it">it</span>
-          <span class="name-part name-sharma">Sharma</span>
-        </h1>
-        <p>
-          Software Engineer • Researcher • Educator<br>
-          Building technology, knowledge systems, and tools that enrich humanity and empower minds.
-        </p>
-
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#tools">Tools</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-
-      <div class="hero-img">
-        <img src="files/hero.jpg" alt="Ankit Sharma">
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2><span class="material-symbols-outlined section-icon">person</span>About Me</h2>
-    <p>
-      I am a software engineer from Jabalpur, India, with a background in both
-      diploma and B.Tech engineering. I work across low-level systems,
-      web technologies, simulations, and research-driven projects.
-    </p>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <h2><span class="material-symbols-outlined section-icon">design_services</span>Services</h2>
-    <div class="skills">
-      <div class="skill">Software Development</div>
-      <div class="skill">Web Development</div>
-      <div class="skill">Desktop Applications</div>
-      <div class="skill">Mobile Application</div>
-      <div class="skill">Automation</div>
-      <div class="skill">Database Management</div>
-    </div>
-  </section>
-
-  <!-- TOOLS -->
-  <section id="tools">
-    <h2><span class="material-symbols-outlined section-icon">terminal</span>Tools</h2>
-    <div class="skills">
-      <div class="skill">C / C++</div>
-      <div class="skill">Python</div>
-      <div class="skill">Go</div>
-      <div class="skill">PHP</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Linux (Fedora)</div>
-      <div class="skill">MySQL</div>
-      <div class="skill">System Design</div>
-      <div class="skill">DSA</div>
-      <div class="skill">Research & Development</div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2><span class="material-symbols-outlined section-icon">deployed_code</span>Projects</h2>
-    <div class="projects">
-
-      <!-- PROJECT 1 -->
-      <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card card-featured">
-          <div class="card-split-layout">
-            <div class="card-main-column">
-              <div class="media-frame media-frame-single">
-                <img src="files/qr-generator/Screenshot From 2026-03-28 21-28-20.png" alt="QR Code Generator preview">
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">image</span>
-                  Preview
-                </span>
-              </div>
-              <div class="card-content">
-                <h3>
-                  <span class="material-symbols-outlined project-icon">qr_code_2</span>
-                  QR Code Generator
-                </h3>
-                <p>
-                  A simple and efficient QR code generator.
-                </p>
-              </div>
-            </div>
-            <div class="card-demo-column">
-              <div class="media-frame media-frame-demo">
-                <video controls preload="metadata">
-                  <source src="files/qr-generator/demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">play_circle</span>
-                  Demo
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ankit Sharma home">
+        <span class="brand-text">Ankit Sharma</span>
       </a>
 
-      <!-- PROJECT 2 -->
-      <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card card-featured">
-          <div class="card-split-layout">
-            <div class="card-main-column">
-              <div class="media-frame media-frame-single">
-                <img src="files/data_toolkit/Screenshot From 2026-03-30 14-53-03.png" alt="Data Toolkit preview">
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">image</span>
-                  Preview
-                </span>
-              </div>
-              <div class="card-content">
-                <h3>
-                  <span class="material-symbols-outlined project-icon">data_object</span>
-                  Data Toolkit
-                </h3>
-                <p>
-                  A tool which calculate the current internet speed of upload and download and show it in the panel also
-                  calculates the time and actual data amount cost to upload and download the given data amount.
-                </p>
-              </div>
-            </div>
-            <div class="card-demo-column">
-              <div class="media-frame media-frame-demo">
-                <video controls preload="metadata">
-                  <source src="files/data_toolkit/demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">play_circle</span>
-                  Demo
-                </span>
-              </div>
-            </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#tools">Tools</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-backdrop"></div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer • Researcher • Educator</p>
+          <h1>Building sharp digital products with research depth and practical execution.</h1>
+          <p class="hero-summary">
+            I create websites, tools, systems, and developer workflows that feel clean, fast, and useful. Your raw
+            concept becomes a polished product with stronger structure, clarity, and usability.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#contact">Start a Project</a>
+          </div>
+
+          <div class="hero-metrics">
+            <article>
+              <span class="metric-value">6+</span>
+              <span class="metric-label">Featured builds</span>
+            </article>
+            <article>
+              <span class="metric-value">Full stack</span>
+              <span class="metric-label">Web, automation, systems</span>
+            </article>
+            <article>
+              <span class="metric-value">Research-led</span>
+              <span class="metric-label">Thoughtful execution</span>
+            </article>
           </div>
         </div>
-      </a>
 
-      <!-- PROJECT 3 -->
-      <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card card-featured">
-          <div class="card-split-layout">
-            <div class="card-main-column">
-              <!-- <div class="media-frame media-frame-single">
-                <img src="files/dev_create/" alt="Dev create preview">
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">image</span>
-                  Preview
-                </span>
-              </div> -->
-              <div class="card-content">
-                <h3>
-                  <span class="material-symbols-outlined project-icon">data_object</span>
-                  Dev Create
-                </h3>
-                <p>
-                  An automation tool for developers to create projects deployment files with a single command,
-                  streamlining
-                  the
-                  setup process and boosting productivity.
-                </p>
-              </div>
+        <aside class="hero-spotlight">
+          <div class="portrait-card">
+            <div class="portrait-frame">
+              <img src="files/hero.jpg" alt="Portrait of Ankit Sharma">
             </div>
-            <div class="card-demo-column">
-              <!-- <div class="media-frame media-frame-demo">
-                <video controls preload="metadata">
-                  <source src="files/dev_create/dev-create.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">play_circle</span>
-                  Demo
-                </span>
-              </div> -->
+
+            <div class="portrait-content">
+              <p class="portrait-kicker">Currently focused on</p>
+              <h2>Modern web experiences, automation tools, and developer-first systems.</h2>
+              <p>
+                Based in India, working across software engineering, low-level systems, research projects, and modern
+                product design.
+              </p>
             </div>
           </div>
-        </div>
-      </a>
+        </aside>
+      </section>
 
-      <!-- PROJECT 4 -->
-      <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card card-featured">
-          <div class="card-split-layout">
-            <div class="card-main-column">
-              <div class="media-frame media-frame-single">
-                <img src="files/webdev/Screenshot From 2026-04-04 10-47-39.png" alt="Web Dev template preview">
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">image</span>
-                  Preview
-                </span>
-              </div>
-              <div class="card-content">
-                <h3>
-                  <span class="material-symbols-outlined project-icon">data_object</span>
-                  Web Dev
-                </h3>
-                <p>
-                  A Template for developing modern, responsive, and secure web applications.
-                </p>
-              </div>
-            </div>
-            <div class="card-demo-column">
-              <div class="media-frame media-frame-demo">
-                <video controls preload="metadata">
-                  <source src="files/webdev/demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">play_circle</span>
-                  Demo
-                </span>
-              </div>
-            </div>
+      <section id="about" class="content-section section-light">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h2>Engineering work that balances logic, simplicity, and visual clarity.</h2>
+        </div>
+
+        <div class="about-grid">
+          <p class="lead-text">
+            I am a software engineer from Jabalpur, India, with diploma and B.Tech engineering experience. I work
+            across low-level systems, web technologies, simulations, knowledge systems, and research-driven products.
+          </p>
+
+          <div class="about-panels">
+            <article class="info-panel">
+              <span class="material-symbols-outlined section-icon">neurology</span>
+              <h3>Research mindset</h3>
+              <p>I like solving problems from first principles, then turning that thinking into practical tools.</p>
+            </article>
+
+            <article class="info-panel">
+              <span class="material-symbols-outlined section-icon">deployed_code</span>
+              <h3>Product thinking</h3>
+              <p>Clean interfaces, fast feedback, and maintainable systems matter as much as the code itself.</p>
+            </article>
           </div>
         </div>
-      </a>
+      </section>
 
-      <!-- PROJECT 5 -->
-      <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card card-featured">
-          <div class="card-split-layout">
-            <div class="card-main-column">
-              <!-- <div class="media-frame media-frame-single">
-                <img src="files/fitness/fitness-preview.png" alt="Fitness Tracker preview">
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">image</span>
-                  Preview
-                </span>
-              </div> -->
-              <div class="card-content">
-                <h3>
-                  <span class="material-symbols-outlined project-icon">data_object</span>
-                  Fitness Tracker
-                </h3>
-                <p>
-                  A tool for tracking fitness goals and monitoring progress.
+      <section id="services" class="content-section">
+        <div class="section-heading">
+          <p class="section-label">Services</p>
+          <h2>From idea to deployable product.</h2>
+        </div>
+
+        <div class="tile-grid">
+          <article class="tile">
+            <span class="material-symbols-outlined section-icon">code_blocks</span>
+            <h3>Software Development</h3>
+            <p>Robust applications with a focus on reliability, readability, and long-term scalability.</p>
+          </article>
+
+          <article class="tile">
+            <span class="material-symbols-outlined section-icon">language</span>
+            <h3>Web Development</h3>
+            <p>Responsive websites and web apps with stronger UX, better structure, and modern frontend polish.</p>
+          </article>
+
+          <article class="tile">
+            <span class="material-symbols-outlined section-icon">desktop_windows</span>
+            <h3>Desktop Applications</h3>
+            <p>Utility-driven desktop software for productivity, internal workflows, and real-world operations.</p>
+          </article>
+
+          <article class="tile">
+            <span class="material-symbols-outlined section-icon">smartphone</span>
+            <h3>Mobile Applications</h3>
+            <p>Focused mobile experiences built around usability, performance, and clear problem solving.</p>
+          </article>
+
+          <article class="tile">
+            <span class="material-symbols-outlined section-icon">sync_alt</span>
+            <h3>Automation</h3>
+            <p>Repeatable systems, scripts, and tooling that reduce setup time and eliminate manual friction.</p>
+          </article>
+
+          <article class="tile">
+            <span class="material-symbols-outlined section-icon">database</span>
+            <h3>Database Management</h3>
+            <p>Structured data flows, efficient storage design, and secure handling across application layers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tools" class="content-section section-light">
+        <div class="section-heading">
+          <p class="section-label">Toolkit</p>
+          <h2>Technologies I use to ship dependable work.</h2>
+        </div>
+
+        <div class="chip-grid">
+          <span class="chip">C / C++</span>
+          <span class="chip">Python</span>
+          <span class="chip">Go</span>
+          <span class="chip">PHP</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Linux (Fedora)</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">System Design</span>
+          <span class="chip">DSA</span>
+          <span class="chip">Research &amp; Development</span>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>Selected work with a stronger presentation layer.</h2>
+        </div>
+
+        <div class="projects">
+          <a class="project-link" href="#">
+            <article class="project-card">
+              <div class="project-media">
+                <div class="media-frame media-preview">
+                  <img src="files/qr-generator/Screenshot From 2026-03-28 21-28-20.png" alt="QR Code Generator preview">
+                  <span class="media-badge">Preview</span>
+                </div>
+                <div class="media-frame media-demo">
+                  <video controls preload="metadata">
+                    <source src="files/qr-generator/demo.mp4" type="video/mp4">
+                  </video>
+                  <span class="media-badge">Demo</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-type">Utility Tool</p>
+                <h3>QR Code Generator</h3>
+                <p>A simple and efficient QR code generator designed for fast everyday usage.</p>
+              </div>
+            </article>
+          </a>
+
+          <a class="project-link" href="#">
+            <article class="project-card">
+              <div class="project-media">
+                <div class="media-frame media-preview">
+                  <img src="files/data_toolkit/Screenshot From 2026-03-30 14-53-03.png" alt="Data Toolkit preview">
+                  <span class="media-badge">Preview</span>
+                </div>
+                <div class="media-frame media-demo">
+                  <video controls preload="metadata">
+                    <source src="files/data_toolkit/demo.mp4" type="video/mp4">
+                  </video>
+                  <span class="media-badge">Demo</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-type">Networking Tool</p>
+                <h3>Data Toolkit</h3>
+                <p>Measures internet speed, estimates transfer time, and helps evaluate upload and download costs.</p>
+              </div>
+            </article>
+          </a>
+
+          <a class="project-link" href="#">
+            <article class="project-card project-card-text">
+              <div class="project-body">
+                <p class="project-type">Developer Automation</p>
+                <h3>Dev Create</h3>
+                <p>An automation tool that generates project deployment files with a single command to speed up setup.
                 </p>
               </div>
-            </div>
-            <div class="card-demo-column">
-              <!-- <div class="media-frame media-frame-demo">
-                <video controls preload="metadata">
-                  <source src="files/fitness/fitness-demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">play_circle</span>
-                  Demo
-                </span>
-              </div> -->
-            </div>
+            </article>
+          </a>
+
+          <a class="project-link" href="#">
+            <article class="project-card">
+              <div class="project-media">
+                <div class="media-frame media-preview">
+                  <img src="files/webdev/Screenshot From 2026-04-04 10-47-39.png" alt="Web Dev template preview">
+                  <span class="media-badge">Preview</span>
+                </div>
+                <div class="media-frame media-demo">
+                  <video controls preload="metadata">
+                    <source src="files/webdev/demo.mp4" type="video/mp4">
+                  </video>
+                  <span class="media-badge">Demo</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-type">Starter Template</p>
+                <h3>Web Dev</h3>
+                <p>A template for developing modern, responsive, and secure web applications.</p>
+              </div>
+            </article>
+          </a>
+
+          <a class="project-link" href="#">
+            <article class="project-card project-card-text">
+              <div class="project-body">
+                <p class="project-type">Personal Utility</p>
+                <h3>Fitness Tracker</h3>
+                <p>A tool for tracking fitness goals and monitoring progress through a focused, practical interface.</p>
+              </div>
+            </article>
+          </a>
+
+          <a class="project-link" href="#">
+            <article class="project-card">
+              <div class="project-media">
+                <div class="media-frame media-preview">
+                  <img src="files/portfoliocms/Screenshot From 2026-04-08 13-53-41.png" alt="Portfolio CMS preview">
+                  <span class="media-badge">Preview</span>
+                </div>
+                <div class="media-frame media-demo">
+                  <video controls preload="metadata">
+                    <source src="files/portfoliocms/demo.mp4" type="video/mp4">
+                  </video>
+                  <span class="media-badge">Demo</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-type">Content Platform</p>
+                <h3>Portfolio CMS</h3>
+                <p>Modern and secure content management for personal portfolios with easy updates and customization.</p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section contact-section">
+        <div class="section-heading">
+          <p class="section-label">Contact</p>
+          <h2>Let&apos;s turn the rough idea into something stronger.</h2>
+        </div>
+
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <p>
+              Available for collaborations, product builds, open-source work, and research-driven projects. If you have
+              a concept, prototype, or raw draft, I can help shape it into a cleaner and more useful experience.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:ankitbhai158@gmail.com">
+              <span class="material-symbols-outlined">mail</span>
+              ankitbhai158@gmail.com
+            </a>
+            <a href="tel:+918103902427">
+              <span class="material-symbols-outlined">call</span>
+              +91 81039 02427
+            </a>
+            <a href="https://github.com/ankit123618" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined">code</span>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ankitbhai158" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined">groups</span>
+              LinkedIn
+            </a>
           </div>
         </div>
-      </a>
+      </section>
+    </main>
 
-      <!-- PROJECT 6 -->
-      <a href="#" style="text-decoration: none; color: inherit;">
-        <div class="card card-featured">
-          <div class="card-split-layout">
-            <div class="card-main-column">
-              <div class="media-frame media-frame-single">
-                <img src="files/portfoliocms/Screenshot From 2026-04-08 13-53-41.png" alt="Portfolio CMS preview">
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">image</span>
-                  Preview
-                </span>
-              </div>
-              <div class="card-content">
-                <h3>
-                  <span class="material-symbols-outlined project-icon">data_object</span>
-                  Portfolio CMS
-                </h3>
-                <p>
-                  Modern and secure content management system for personal portfolios, enabling easy updates and
-                  customization.
-                </p>
-              </div>
-            </div>
-            <div class="card-demo-column">
-              <div class="media-frame media-frame-demo">
-                <video controls preload="metadata">
-                  <source src="files/portfoliocms/demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <span class="media-badge">
-                  <span class="material-symbols-outlined">play_circle</span>
-                  Demo
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <p class="footer-logo">Ankit Sharma</p>
-        <p class="footer-tagline">
-          Software Engineer building secure, modern tools and research-driven experiences.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-block">
-          <h4>Explore</h4>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-        </div>
-
-        <div class="footer-block">
-          <h4>Community</h4>
-          <a href="https://github.com/ankit123618" target="_blank"><span
-              class="material-symbols-outlined footer-icon">code</span>GitHub</a>
-          <a href="https://www.linkedin.com/in/ankitbhai158" target="_blank"><span
-              class="material-symbols-outlined footer-icon">groups</span>LinkedIn</a>
-          <!-- <a href="#">Flathub</a> -->
-          <!-- <a href="#">PyPI</a> -->
-        </div>
-
-        <div class="footer-block">
-          <h4>Contact</h4>
-          <a href="tel:+918103902427"><span class="material-symbols-outlined footer-icon">call</span>+91 81039 02427</a>
-          <a href="mailto:ankitbhai158@gmail.com"><span
-              class="material-symbols-outlined footer-icon">mail</span>ankitbhai158@gmail.com</a>
-          <p>Available for collaboration, open-source contributions, and research projects.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Ankit Sharma • Built on Linux with clarity and purpose</p>
-    </div>
-  </footer>
-
+    <footer class="site-footer">
+      <p class="footer-logo">Ankit Sharma</p>
+      <p class="footer-note">Software Engineer building secure, modern tools and research-driven experiences.</p>
+      <p class="footer-bottom">© 2026 Ankit Sharma • Built with clarity and purpose</p>
+    </footer>
+  </div>
 </body>
 
 </html>
