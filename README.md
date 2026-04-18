@@ -12,7 +12,6 @@ A static personal portfolio built with plain HTML and CSS.
     <td width="42%" valign="top">
       <img src="files/MyStaticWebsite/preview1.png" alt="RFPC screenshot 1" />
       <img src="files/MyStaticWebsite/preview2.png" alt="RFPC screenshot 1" />
-
     </td>
   </tr>
 </table>
