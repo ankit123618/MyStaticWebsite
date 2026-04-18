@@ -1,6 +1,21 @@
 # MyStaticWebsite
 
+## About
+
 A static personal portfolio built with plain HTML and CSS.
+
+<table>
+  <tr>
+    <td width="58%" valign="top">
+      <img src="files/MyStaticWebsite/demo.gif" alt="RFPC demo" />
+    </td>
+    <td width="42%" valign="top">
+      <img src="files/MyStaticWebsite/preview1.png" alt="RFPC screenshot 1" />
+      <img src="files/MyStaticWebsite/preview2.png" alt="RFPC screenshot 1" />
+
+    </td>
+  </tr>
+</table>
 
 The current design uses:
 
